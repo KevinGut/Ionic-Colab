@@ -1,0 +1,7 @@
+{
+  "name": "Colab-Ejemplo",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

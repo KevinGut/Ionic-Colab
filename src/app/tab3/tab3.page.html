@@ -1,0 +1,27 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Tab 3
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Tab 3</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <form (ngSubmit)="logForm()">
+    <ion-item>
+      <ion-label position="floating">Texto 1</ion-label>
+      <ion-input type="text" [(ngModel)]="todo.texto1" name="texto1"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Texto 2</ion-label>
+      <ion-textarea [(ngModel)]="todo.texto2" name="texto2"></ion-textarea>
+    </ion-item>
+    <ion-button ion-button type="submit" block>Add Todo</ion-button>
+  </form>
+
+</ion-content>

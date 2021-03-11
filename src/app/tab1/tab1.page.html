@@ -1,0 +1,30 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Tab 1
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div id="container">
+    <ion-card (click)="cardModal(city.city)" *ngFor="let city of cities; let in = index">
+      <ion-card-header>
+        <ion-card-subtitle>{{city.city.native}}</ion-card-subtitle>
+        <ion-card-title>{{city.city.name}}</ion-card-title>
+      </ion-card-header>
+
+      <ion-card-content>
+        <ul>
+          <li>
+            Capital: {{city.city.name}}
+          </li>
+          <li>
+            Moneda: {{city.city.currency}}
+          </li>
+        </ul>
+      </ion-card-content>
+    </ion-card>
+
+  </div>
+</ion-content>
